@@ -1,0 +1,45 @@
+.country-item {
+	background: #f8f8f8;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	img.flag {
+		width: 100%;
+		border-top-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+	}
+
+	.body {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		text-align: center;
+		align-items: center;
+		justify-content: space-between;
+        font-size: 1.1rem;
+
+		.name {
+			margin: 1rem;
+		}
+	}
+
+	button.info {
+		background: #efefef;
+		padding: 1rem;
+		border-radius: 0;
+		border: none;
+		border-bottom-left-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+		cursor: pointer;
+        font-size: .9rem;
+
+		&:hover {
+			background: #ebebeb;
+		}
+        &:active {
+			background: #dbdbdb;
+        }
+	}
+}

@@ -18,12 +18,12 @@ const Home = () => {
 		getCountries();
 	}, []);
 
-	if (!countries.length) {
-		return <Loading />;
-	}
-	console.log(countries);
+	if (!countries.length) return <Loading />;
+
 	return (
 		<div className="home-container">
+			<h1 className="general-title">American Countries</h1>
+
 			<div className="countries-list">
 				{countries.map((country, index) => (
 					<Country data={country} key={index} />

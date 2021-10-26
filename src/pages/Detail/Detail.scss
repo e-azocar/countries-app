@@ -1,0 +1,50 @@
+.detail-container {
+	max-width: 900px;
+	margin: 2rem auto;
+
+    .return-home{
+        font-size: 1.1rem;
+        color: #4d4d4d;
+    }
+
+	.country-container {
+		border-radius: 0.5rem;
+		background: #efefef;
+        margin-top: 2rem;
+
+		img.flag {
+			width: 100%;
+			height: auto;
+			border-top-left-radius: 0.5rem;
+			border-top-right-radius: 0.5rem;
+		}
+
+		.info {
+			margin-left: 2rem;
+			padding: 2rem;
+
+			.country-name {
+				text-align: center;
+				margin-bottom: 2rem;
+
+				h1 {
+					margin: 0;
+					font-size: 2.8rem;
+				}
+				span {
+					font-size: 1.2rem;
+					color: #2f2f2f;
+				}
+			}
+
+			.country-data {
+				font-size: 1.4rem;
+				list-style: none;
+
+				li {
+					margin: 0.4rem 0;
+				}
+			}
+		}
+	}
+}

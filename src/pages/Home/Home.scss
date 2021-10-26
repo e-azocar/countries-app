@@ -1,6 +1,11 @@
 .home-container {
 	max-width: 1200px;
 	margin: 0 auto;
+
+	.general-title {
+		text-align: center;
+		margin-top: 1.5rem;
+	}
     
 	.countries-list {
 		display: grid;

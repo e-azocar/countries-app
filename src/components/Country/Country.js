@@ -6,7 +6,7 @@ import "./Country.scss";
 const Country = ({ data }) => {
 	const history = useHistory();
 
-	const clickHandler = () => history.push(`/country/${data.name.common}`);
+	const clickHandler = () => history.push(`/country/${data.cca3}`);
 
 	return (
 		<div className="country-item">

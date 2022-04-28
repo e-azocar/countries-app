@@ -12,4 +12,4 @@ __By Emmanuel Azócar__
 ## Open in browser
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.\
-View deployed [https://countries.azocar.ml/](https://countries.azocar.ml/)
+View deployed [https://countries-app-chi.vercel.app/](https://countries-app-chi.vercel.app/)

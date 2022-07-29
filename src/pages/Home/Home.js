@@ -6,31 +6,31 @@ import api from "../../lib/api";
 import "./Home.scss";
 
 const Home = () => {
-	const [countries, setCountries] = useState([]);
+  const [countries, setCountries] = useState([]);
 
-	const getCountries = async () => {
-		const res = await api.get("/region/ame");
-		const data = res.data.filter((country) => country.independent);
-		setCountries(data);
-	};
+  const getCountries = async () => {
+    const res = await api.get("/region/ame");
+    const data = res.data.filter((country) => country.independent);
+    setCountries(data);
+  };
 
-	useEffect(() => {
-		getCountries();
-	}, []);
+  useEffect(() => {
+    getCountries();
+  }, []);
 
-	if (!countries.length) return <Loading />;
+  if (!countries.length) return <Loading />;
 
-	return (
-		<div className="home-container">
-			<h1 className="general-title">American Countries</h1>
+  return (
+    <div className="home-container">
+      <h1 className="general-title">American Countries</h1>
 
-			<div className="countries-list">
-				{countries.map((country, index) => (
-					<Country data={country} key={index} />
-				))}
-			</div>
-		</div>
-	);
+      <div className="countries-list">
+        {countries.map((country, index) => (
+          <Country data={country} key={index} />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Home;
